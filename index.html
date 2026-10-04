@@ -1,209 +1,456 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasem | Personal Portfolio</title>
-    <meta name="description" content="Personal portfolio of Jasem, a BIT student and aspiring software developer.">
+
+    <meta name="description"
+          content="Personal portfolio website showcasing skills, projects, education and contact information.">
+
+    <title>Muhammad Jasem Miya | Personal Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Jasem's Personal Portfolio</h1>
+    <!-- Header -->
+    <header class="site-header">
 
-        <p>BIT Student | Aspiring Software Developer</p>
+        <div class="container header-container">
 
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Technical Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+            <a href="#home" class="logo">
+                Jasem<span>.</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
     </header>
 
-    <hr>
 
     <main>
 
-        <section id="about">
-            <h2>About Me</h2>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
 
-            <img src="images/profile.jpeg"
-                 alt="Profile photograph of Jasem"
-                 width="200"
-                 height="200">
+            <div class="container hero-container">
 
-            <p>
-                Hello! My name is Jasem, and I am a Bachelor of
-                Information Technology (BIT) student at International
-                 American University. I am interested in web development,
-                programming, and artificial intelligence.
-            </p>
+                <div class="hero-content">
 
-            <p>
-                My goal is to improve my technical knowledge by
-                developing practical projects and learning new
-                technologies. I enjoy solving programming problems
-                and creating useful applications.
-            </p>
+                    <p class="hero-intro">Hello, I'm</p>
+
+                    <h1>
+                        Muhammad Jasem Miya
+                    </h1>
+
+                    <h2>
+                        Bachelor of Information Technology Student
+                    </h2>
+
+                    <p>
+                        I am an IT student interested in programming, web development,
+                        artificial intelligence and software development. This portfolio
+                        presents my skills, academic projects and learning journey.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="button primary-button">
+                            View My Projects
+                        </a>
+
+                        <a href="#contact" class="button secondary-button">
+                            Contact Me
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image">
+
+                    <img
+                        src="images/profile.jpeg"
+                        alt="Profile photograph of Muhammad Jasem Miya"
+                    >
+
+                </div>
+
+            </div>
+
         </section>
 
-        <hr>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
+        <!-- About Section -->
+        <section id="about" class="section">
 
-            <p>
-                The following list describes my current technical
-                skills and areas of interest.
-            </p>
+            <div class="container">
 
-            <dl>
-                <dt><strong>HTML5</strong></dt>
-                <dd>
-                    Creating structured webpages using semantic
-                    elements and accessible HTML forms.
-                </dd>
+                <div class="section-heading">
+                    <p>About Me</p>
+                    <h2>Who I Am</h2>
+                </div>
 
-                <dt><strong>Python</strong></dt>
-                <dd>
-                    Writing basic programs, solving problems,
-                    and developing simple applications.
-                </dd>
+                <div class="about-content">
 
-                <dt><strong>C Programming</strong></dt>
-                <dd>
-                    Working with variables, functions, arrays,
-                    pointers, and basic data structures.
-                </dd>
+                    <article class="about-text">
 
-                <dt><strong>Artificial Intelligence</strong></dt>
-                <dd>
-                    Learning about AI concepts, intelligent
-                    applications, and automation.
-                </dd>
-            </dl>
+                        <h3>About My Background</h3>
+
+                        <p>
+                            I am currently studying Bachelor of Information Technology.
+                            My studies have introduced me to programming, web technologies,
+                            databases, networking and software development.
+                        </p>
+
+                        <p>
+                            I enjoy creating practical technology projects that help solve
+                            everyday problems. I am especially interested in Python,
+                            C programming, HTML, CSS and artificial intelligence.
+                        </p>
+
+                        <p>
+                            My goal is to continue improving my technical and problem-solving
+                            skills while developing useful and professional software systems.
+                        </p>
+
+                    </article>
+
+
+                    <aside class="about-card">
+
+                        <h3>Quick Information</h3>
+
+                        <ul>
+                            <li><strong>Field:</strong> Information Technology</li>
+                            <li><strong>Interests:</strong> Web Development</li>
+                            <li><strong>Programming:</strong> Python and C</li>
+                            <li><strong>Web:</strong> HTML and CSS</li>
+                            <li><strong>Interest:</strong> Artificial Intelligence</li>
+                        </ul>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <hr>
 
-        <section id="projects">
-            <h2>My Projects</h2>
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
 
-            <p>
-                These projects demonstrate my programming and
-                software development knowledge.
-            </p>
+            <div class="container">
 
-            <article>
-                <h3>Project 1: Student Information Management System</h3>
+                <div class="section-heading">
+                    <p>My Abilities</p>
+                    <h2>Technical Skills</h2>
+                </div>
 
-                <p>
-                    A simple C programming project designed to
-                    manage student records. The system allows
-                    users to add, view, search, and manage
-                    student information.
-                </p>
 
-                <p>
-                    Technologies used: C Programming, Structures,
-                    Functions, and File Handling.
-                </p>
+                <div class="skills-grid">
 
-                <p>
-                    <a href="https://github.com/MuhammadMiya106/student-information-system">
-                        View Project Repository
-                    </a>
-                </p>
-            </article>
+                    <article class="skill-card">
 
-            <article>
-                <h3>Project 2: Personal Portfolio Website</h3>
+                        <div class="skill-icon">01</div>
 
-                <p>
-                    A single-page personal portfolio created
-                    using semantic HTML5. It presents personal
-                    information, technical skills, projects,
-                    and contact details.
-                </p>
+                        <h3>Python</h3>
 
-                <p>
-                    Technologies used: HTML5 and semantic
-                    web development.
-                </p>
+                        <p>
+                            Programming fundamentals, problem solving,
+                            basic applications and data handling.
+                        </p>
 
-                <p>
-                    <a href="https://github.com/MuhammadMiya106/personal-portfolio">
-                        View Project Repository
-                    </a>
-                </p>
-            </article>
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">02</div>
+
+                        <h3>C Programming</h3>
+
+                        <p>
+                            Functions, arrays, pointers, structures,
+                            file handling and structured programming.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">03</div>
+
+                        <h3>HTML5</h3>
+
+                        <p>
+                            Semantic HTML, accessible page structures,
+                            forms and modern webpage organization.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">04</div>
+
+                        <h3>CSS</h3>
+
+                        <p>
+                            Responsive layouts, Flexbox, Grid,
+                            typography, colors and media queries.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">05</div>
+
+                        <h3>Artificial Intelligence</h3>
+
+                        <p>
+                            General understanding of AI concepts,
+                            applications and emerging technologies.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <div class="skill-icon">06</div>
+
+                        <h3>Problem Solving</h3>
+
+                        <p>
+                            Logical thinking and developing practical
+                            solutions to programming problems.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
         </section>
 
-        <hr>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
 
-            <p>
-                If you would like to discuss a project,
-                collaboration, or any other opportunity,
-                please use the form below.
-            </p>
+            <div class="container">
 
-            <form action="mailto:your-email@example.com"
-                  method="post"
-                  enctype="text/plain">
+                <div class="section-heading">
+                    <p>My Work</p>
+                    <h2>Featured Projects</h2>
+                </div>
 
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text"
-                           id="name"
-                           name="name"
-                           autocomplete="name"
-                           required>
-                </p>
 
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email"
-                           id="email"
-                           name="email"
-                           autocomplete="email"
-                           required>
-                </p>
+                <div class="projects-grid">
 
-                <p>
-                    <label for="message">Message:</label>
-                    <textarea id="message"
-                              name="message"
-                              rows="5"
-                              cols="30"
-                              required></textarea>
-                </p>
+                    <article class="project-card">
 
-                <button type="submit">Send Message</button>
+                        <img
+                            src="assets/project1.jpg"
+                            alt="Screenshot of Jasem Cosmetics project"
+                        >
 
-            </form>
+                        <div class="project-content">
+
+                            <p class="project-category">
+                                Web Development
+                            </p>
+
+                            <h3>Jasem Cosmetics</h3>
+
+                            <p>
+                                A cosmetics e-commerce system designed to allow
+                                customers to browse products, manage a shopping
+                                cart and complete an online purchase process.
+                            </p>
+
+                            <ul class="project-tags">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Agile</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                    <article class="project-card">
+
+                        <img
+                            src="assets/project3.jpg"
+                            alt="Screenshot of parity checker project"
+                        >
+
+                        <div class="project-content">
+
+                            <p class="project-category">
+                                Digital Logic
+                            </p>
+
+                            <h3>4-Bit Parity Checker</h3>
+
+                            <p>
+                                A digital logic project that generates and checks
+                                an even parity bit using basic logic gates.
+                            </p>
+
+                            <ul class="project-tags">
+                                <li>Logic Gates</li>
+                                <li>XOR</li>
+                                <li>Logisim</li>
+                            </ul>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p>My Journey</p>
+                    <h2>Education</h2>
+                </div>
+
+
+                <div class="education-card">
+
+                    <div class="education-year">
+                        Current
+                    </div>
+
+                    <div class="education-content">
+
+                        <h3>Bachelor of Information Technology</h3>
+
+                        <h4>International University</h4>
+
+                        <p>
+                            Currently developing knowledge in programming,
+                            web development, databases, networking,
+                            software engineering and information technology.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p>Get In Touch</p>
+                    <h2>Contact Me</h2>
+                </div>
+
+
+                <div class="contact-content">
+
+                    <div class="contact-text">
+
+                        <h3>Let's Connect</h3>
+
+                        <p>
+                            If you would like to discuss a project, collaboration
+                            or technology-related opportunity, feel free to contact me.
+                        </p>
+
+                    </div>
+
+
+                    <address class="contact-details">
+
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:your-email@example.com">
+                                your-email@example.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>GitHub:</strong>
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                github.com/yourusername
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Location:</strong>
+                            Nepal
+                        </p>
+
+                    </address>
+
+                </div>
+
+            </div>
+
         </section>
 
     </main>
 
-    <hr>
 
-    <footer>
-        <p>
-            &copy; 2026 Jasem. All rights reserved.
-        </p>
+    <!-- Footer -->
+    <footer class="site-footer">
 
-        <p>
-            Personal Portfolio Website | Created using HTML5
-        </p>
+        <div class="container footer-container">
+
+            <p>
+                &copy; 2026 Muhammad Jasem Miya. All rights reserved.
+            </p>
+
+            <nav aria-label="Footer navigation">
+
+                <ul>
+                    <li><a href="#home">Back to Top</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
     </footer>
 
 </body>
