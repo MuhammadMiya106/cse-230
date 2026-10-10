@@ -1,456 +1,107 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Personal portfolio website showcasing skills, projects, education and contact information.">
-
-    <title>Muhammad Jasem Miya | Personal Portfolio</title>
-
+    <meta name="description" content="A responsive image slider library built with HTML, CSS, and JavaScript.">
+    <title>Image Slider Library</title>
     <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
 </head>
-
 <body>
 
-    <!-- Header -->
     <header class="site-header">
-
-        <div class="container header-container">
-
-            <a href="#home" class="logo">
-                Jasem<span>.</span>
-            </a>
-
-            <!-- Navigation -->
-            <nav class="navigation" aria-label="Main navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-
-        </div>
-
+        <h1>Image Slider Library</h1>
+        <p>Explore beautiful images with a smooth, responsive slider.</p>
     </header>
 
-
     <main>
+        <section class="slider-section" aria-label="Image gallery">
+            <div class="slider-container">
 
-        <!-- Hero Section -->
-        <section id="home" class="hero">
+                <div class="slider-track" id="sliderTrack">
 
-            <div class="container hero-container">
-
-                <div class="hero-content">
-
-                    <p class="hero-intro">Hello, I'm</p>
-
-                    <h1>
-                        Muhammad Jasem Miya
-                    </h1>
-
-                    <h2>
-                        Bachelor of Information Technology Student
-                    </h2>
-
-                    <p>
-                        I am an IT student interested in programming, web development,
-                        artificial intelligence and software development. This portfolio
-                        presents my skills, academic projects and learning journey.
-                    </p>
-
-                    <div class="hero-buttons">
-                        <a href="#projects" class="button primary-button">
-                            View My Projects
-                        </a>
-
-                        <a href="#contact" class="button secondary-button">
-                            Contact Me
-                        </a>
-                    </div>
-
-                </div>
-
-
-                <div class="hero-image">
-
-                    <img
-                        src="images/profile.jpeg"
-                        alt="Profile photograph of Muhammad Jasem Miya"
-                    >
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- About Section -->
-        <section id="about" class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <p>About Me</p>
-                    <h2>Who I Am</h2>
-                </div>
-
-                <div class="about-content">
-
-                    <article class="about-text">
-
-                        <h3>About My Background</h3>
-
-                        <p>
-                            I am currently studying Bachelor of Information Technology.
-                            My studies have introduced me to programming, web technologies,
-                            databases, networking and software development.
-                        </p>
-
-                        <p>
-                            I enjoy creating practical technology projects that help solve
-                            everyday problems. I am especially interested in Python,
-                            C programming, HTML, CSS and artificial intelligence.
-                        </p>
-
-                        <p>
-                            My goal is to continue improving my technical and problem-solving
-                            skills while developing useful and professional software systems.
-                        </p>
-
-                    </article>
-
-
-                    <aside class="about-card">
-
-                        <h3>Quick Information</h3>
-
-                        <ul>
-                            <li><strong>Field:</strong> Information Technology</li>
-                            <li><strong>Interests:</strong> Web Development</li>
-                            <li><strong>Programming:</strong> Python and C</li>
-                            <li><strong>Web:</strong> HTML and CSS</li>
-                            <li><strong>Interest:</strong> Artificial Intelligence</li>
-                        </ul>
-
-                    </aside>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Skills Section -->
-        <section id="skills" class="section skills-section">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <p>My Abilities</p>
-                    <h2>Technical Skills</h2>
-                </div>
-
-
-                <div class="skills-grid">
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">01</div>
-
-                        <h3>Python</h3>
-
-                        <p>
-                            Programming fundamentals, problem solving,
-                            basic applications and data handling.
-                        </p>
-
-                    </article>
-
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">02</div>
-
-                        <h3>C Programming</h3>
-
-                        <p>
-                            Functions, arrays, pointers, structures,
-                            file handling and structured programming.
-                        </p>
-
-                    </article>
-
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">03</div>
-
-                        <h3>HTML5</h3>
-
-                        <p>
-                            Semantic HTML, accessible page structures,
-                            forms and modern webpage organization.
-                        </p>
-
-                    </article>
-
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">04</div>
-
-                        <h3>CSS</h3>
-
-                        <p>
-                            Responsive layouts, Flexbox, Grid,
-                            typography, colors and media queries.
-                        </p>
-
-                    </article>
-
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">05</div>
-
-                        <h3>Artificial Intelligence</h3>
-
-                        <p>
-                            General understanding of AI concepts,
-                            applications and emerging technologies.
-                        </p>
-
-                    </article>
-
-
-                    <article class="skill-card">
-
-                        <div class="skill-icon">06</div>
-
-                        <h3>Problem Solving</h3>
-
-                        <p>
-                            Logical thinking and developing practical
-                            solutions to programming problems.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <p>My Work</p>
-                    <h2>Featured Projects</h2>
-                </div>
-
-
-                <div class="projects-grid">
-
-                    <article class="project-card">
-
+                    <div class="slide">
                         <img
-                            src="assets/project1.jpg"
-                            alt="Screenshot of Jasem Cosmetics project"
+                            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+                            alt="Beautiful mountain landscape"
                         >
-
-                        <div class="project-content">
-
-                            <p class="project-category">
-                                Web Development
-                            </p>
-
-                            <h3>Jasem Cosmetics</h3>
-
-                            <p>
-                                A cosmetics e-commerce system designed to allow
-                                customers to browse products, manage a shopping
-                                cart and complete an online purchase process.
-                            </p>
-
-                            <ul class="project-tags">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Agile</li>
-                            </ul>
-
+                        <div class="slide-caption">
+                            <h2>Mountain Escape</h2>
+                            <p>Discover the beauty of nature.</p>
                         </div>
+                    </div>
 
-                    </article>
-
-                    <article class="project-card">
-
+                    <div class="slide">
                         <img
-                            src="assets/project3.jpg"
-                            alt="Screenshot of parity checker project"
+                            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80"
+                            alt="Mountain lake surrounded by green hills"
                         >
-
-                        <div class="project-content">
-
-                            <p class="project-category">
-                                Digital Logic
-                            </p>
-
-                            <h3>4-Bit Parity Checker</h3>
-
-                            <p>
-                                A digital logic project that generates and checks
-                                an even parity bit using basic logic gates.
-                            </p>
-
-                            <ul class="project-tags">
-                                <li>Logic Gates</li>
-                                <li>XOR</li>
-                                <li>Logisim</li>
-                            </ul>
-
+                        <div class="slide-caption">
+                            <h2>Peaceful Lake</h2>
+                            <p>Find peace in every moment.</p>
                         </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Education Section -->
-        <section id="education" class="section education-section">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <p>My Journey</p>
-                    <h2>Education</h2>
-                </div>
-
-
-                <div class="education-card">
-
-                    <div class="education-year">
-                        Current
                     </div>
 
-                    <div class="education-content">
+                    <div class="slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80"
+                            alt="Blue ocean waves beside a sandy beach"
+                        >
+                        <div class="slide-caption">
+                            <h2>Ocean View</h2>
+                            <p>Enjoy the calm of the ocean.</p>
+                        </div>
+                    </div>
 
-                        <h3>Bachelor of Information Technology</h3>
-
-                        <h4>International University</h4>
-
-                        <p>
-                            Currently developing knowledge in programming,
-                            web development, databases, networking,
-                            software engineering and information technology.
-                        </p>
-
+                    <div class="slide">
+                        <img
+                            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80"
+                            alt="Sunlight shining through a green forest"
+                        >
+                        <div class="slide-caption">
+                            <h2>Green Forest</h2>
+                            <p>Reconnect with the natural world.</p>
+                        </div>
                     </div>
 
                 </div>
 
-            </div>
+                <button
+                    class="slider-button prev-button"
+                    id="prevButton"
+                    type="button"
+                    aria-label="Previous image"
+                >
+                    &#10094;
+                </button>
 
-        </section>
-
-
-        <!-- Contact Section -->
-        <section id="contact" class="section contact-section">
-
-            <div class="container">
-
-                <div class="section-heading">
-                    <p>Get In Touch</p>
-                    <h2>Contact Me</h2>
-                </div>
-
-
-                <div class="contact-content">
-
-                    <div class="contact-text">
-
-                        <h3>Let's Connect</h3>
-
-                        <p>
-                            If you would like to discuss a project, collaboration
-                            or technology-related opportunity, feel free to contact me.
-                        </p>
-
-                    </div>
-
-
-                    <address class="contact-details">
-
-                        <p>
-                            <strong>Email:</strong>
-                            <a href="mailto:your-email@example.com">
-                                your-email@example.com
-                            </a>
-                        </p>
-
-                        <p>
-                            <strong>GitHub:</strong>
-                            <a
-                                href="https://github.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                github.com/yourusername
-                            </a>
-                        </p>
-
-                        <p>
-                            <strong>Location:</strong>
-                            Nepal
-                        </p>
-
-                    </address>
-
-                </div>
+                <button
+                    class="slider-button next-button"
+                    id="nextButton"
+                    type="button"
+                    aria-label="Next image"
+                >
+                    &#10095;
+                </button>
 
             </div>
 
-        </section>
+            <div
+                class="slider-dots"
+                id="sliderDots"
+                aria-label="Choose an image"
+            ></div>
 
+            <p class="slide-counter" id="slideCounter" aria-live="polite">
+                Image 1 of 4
+            </p>
+        </section>
     </main>
 
-
-    <!-- Footer -->
     <footer class="site-footer">
-
-        <div class="container footer-container">
-
-            <p>
-                &copy; 2026 Muhammad Jasem Miya. All rights reserved.
-            </p>
-
-            <nav aria-label="Footer navigation">
-
-                <ul>
-                    <li><a href="#home">Back to Top</a></li>
-                </ul>
-
-            </nav>
-
-        </div>
-
+        <p>&copy; 2026 Image Slider Library. Built with HTML, CSS, and JavaScript.</p>
     </footer>
 
 </body>
